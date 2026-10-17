@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b5bd3">
+  <meta name="description" content="SeaRoute AI — bilingual fishing trip preparation, safety planning, and responsible AI prototype for coastal communities.">
+  <title>SeaRoute AI — Safer Decisions at Sea</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="SeaRoute AI home">
+      <span class="brand-mark" aria-hidden="true">S</span>
+      <span>SeaRoute<span class="brand-ai"> AI</span><small data-i18n="brandTag">COASTAL SAFETY COMPANION</small></span>
+    </a>
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="#tools" data-i18n="navTools">AI Tools</a>
+      <a href="#safety" data-i18n="navSafety">Safety</a>
+      <a href="#about" data-i18n="navAbout">About</a>
+    </nav>
+    <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">বাংলা</button>
+  </header>
+
+  <main id="main">
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="pulse-dot"></span><span data-i18n="heroEyebrow">BUILT FOR COASTAL COMMUNITIES</span></span>
+        <h1 data-i18n="heroTitle">Smarter preparation.<br><span class="gradient-text">Safer fishing.</span></h1>
+        <p class="hero-lead" data-i18n="heroLead">A practical digital companion for planning a fishing trip, preparing safety equipment, and thinking through risks — in English or Bangla.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#tools"><span data-i18n="exploreTools">Explore tools</span><span aria-hidden="true">↗</span></a>
+          <a class="btn btn-glass" href="#safety" data-i18n="reviewSafety">Review safety guide</a>
+        </div>
+        <div class="hero-trust"><span aria-hidden="true">✓</span><span data-i18n="trustLine">Clear limits · Privacy-aware prototype · Human judgment first</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Decorative ocean illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="ocean-card">
+          <div class="ocean-card-top"><span class="mini-logo">SA</span><span class="live-label"><i></i><span data-i18n="prototypeLabel">PROTOTYPE</span></span></div>
+          <div class="ocean-wave wave-one"></div><div class="ocean-wave wave-two"></div><div class="ocean-wave wave-three"></div>
+          <div class="compass"><span>N</span><div class="compass-arrow"></div></div>
+          <div class="ocean-card-bottom"><span data-i18n="oceanCardTitle">Plan before departure</span><small data-i18n="oceanCardSub">Use official warnings for real decisions</small></div>
+        </div>
+        <div class="float-chip chip-top"><span class="chip-icon">✓</span><span><b data-i18n="chipCheckTitle">Ready check</b><small data-i18n="chipCheckSub">Equipment & contacts</small></span></div>
+        <div class="float-chip chip-bottom"><span class="chip-icon blue-icon">↗</span><span><b data-i18n="chipPlanTitle">Trip planner</b><small data-i18n="chipPlanSub">Your plan, saved locally</small></span></div>
+      </div>
+    </section>
+
+    <section class="stats-strip section-wrap" aria-label="Project principles">
+      <div><strong>02</strong><span data-i18n="statLanguages">Languages</span></div>
+      <div><strong>04</strong><span data-i18n="statTools">Interactive tools</span></div>
+      <div><strong>0</strong><span data-i18n="statFakeData">Live forecast claims</span></div>
+      <div><strong>100%</strong><span data-i18n="statHuman">Human decision required</span></div>
+    </section>
+
+    <section class="section-wrap content-section" id="tools">
+      <div class="section-heading">
+        <div><span class="eyebrow" data-i18n="toolsEyebrow">YOUR WORKSPACE</span><h2 data-i18n="toolsTitle">Tools for a more prepared trip</h2></div>
+        <p data-i18n="toolsLead">These tools work in your browser. They help organize decisions but do not provide live weather, GPS routing, or verified marine advice.</p>
+      </div>
+
+      <div class="tool-grid">
+        <article class="tool-card trip-card">
+          <div class="tool-icon icon-gradient">⌁</div><span class="tool-kicker" data-i18n="toolOneKicker">01 / PLAN</span>
+          <h3 data-i18n="tripTitle">Fishing trip planner</h3>
+          <p data-i18n="tripDesc">Create a simple trip brief with crew, departure plan, communication contact, and return check-in.</p>
+          <button class="text-button" type="button" data-scroll="#planner"><span data-i18n="openPlanner">Open trip planner</span> <span aria-hidden="true">→</span></button>
+        </article>
+        <article class="tool-card safety-card">
+          <div class="tool-icon icon-light">✓</div><span class="tool-kicker" data-i18n="toolTwoKicker">02 / PREPARE</span>
+          <h3 data-i18n="checklistTitle">Safety checklist</h3>
+          <p data-i18n="checklistDesc">Check essential equipment and see how many items you have confirmed before departure.</p>
+          <button class="text-button" type="button" data-scroll="#checklist"><span data-i18n="openChecklist">Open checklist</span> <span aria-hidden="true">→</span></button>
+        </article>
+        <article class="tool-card assistant-card">
+          <div class="tool-icon icon-violet">✳</div><span class="tool-kicker" data-i18n="toolThreeKicker">03 / ASK</span>
+          <h3 data-i18n="assistantTitle">Safety thinking assistant</h3>
+          <p data-i18n="assistantDesc">Ask a safety-preparation question. A transparent, rule-based helper gives general guidance, not live AI forecasts.</p>
+          <button class="text-button" type="button" data-scroll="#assistant"><span data-i18n="openAssistant">Ask assistant</span> <span aria-hidden="true">→</span></button>
+        </article>
+        <article class="tool-card notes-card">
+          <div class="tool-icon icon-sky">▤</div><span class="tool-kicker" data-i18n="toolFourKicker">04 / RECORD</span>
+          <h3 data-i18n="notesTitle">Trip notes & summary</h3>
+          <p data-i18n="notesDesc">Save your trip brief on this device and generate a plain-text summary to share with your crew.</p>
+          <button class="text-button" type="button" data-scroll="#saved"><span data-i18n="openSaved">View saved plan</span> <span aria-hidden="true">→</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-wrap content-section workspace-grid" id="planner">
+      <div class="section-heading compact-heading">
+        <div><span class="eyebrow" data-i18n="plannerEyebrow">TOOL 01</span><h2 data-i18n="plannerTitle">Build your trip brief</h2></div>
+        <p data-i18n="plannerLead">Enter the plan you already intend to follow. This form does not calculate a safe route or recommend sailing conditions.</p>
+      </div>
+      <form class="panel form-panel" id="tripForm">
+        <div class="form-grid">
+          <label><span data-i18n="tripNameLabel">Trip name</span><input id="tripName" name="tripName" maxlength="80" placeholder="e.g. Morning fishing trip" data-i18n-placeholder="tripNamePlaceholder" required></label>
+          <label><span data-i18n="departureLabel">Planned departure point</span><input id="departure" name="departure" maxlength="100" placeholder="e.g. Local landing site" data-i18n-placeholder="departurePlaceholder" required></label>
+          <label><span data-i18n="crewLabel">Crew count</span><input id="crew" name="crew" type="number" min="1" max="100" value="3" required></label>
+          <label><span data-i18n="contactLabel">Shore contact name or role</span><input id="shoreContact" name="shoreContact" maxlength="100" placeholder="e.g. Family contact" data-i18n-placeholder="contactPlaceholder" required></label>
+          <label><span data-i18n="checkinLabel">Agreed check-in time</span><input id="checkin" name="checkin" type="text" maxlength="60" placeholder="e.g. 4:00 PM (local time)" data-i18n-placeholder="checkinPlaceholder" required></label>
+          <label><span data-i18n="commsLabel">Communication method</span><select id="comms" name="comms"><option value="Mobile phone">Mobile phone</option><option value="Marine radio">Marine radio</option><option value="Other agreed method">Other agreed method</option></select></label>
+        </div>
+        <label class="full-label"><span data-i18n="notesLabel">Extra notes (optional)</span><textarea id="tripNotes" name="tripNotes" rows="3" maxlength="800" placeholder="Crew arrangements, planned return, backup contact…" data-i18n-placeholder="notesPlaceholder"></textarea></label>
+        <div class="form-actions"><button class="btn btn-primary" type="submit" data-i18n="saveTrip">Save trip plan on this device</button><span class="form-hint" data-i18n="localSaveHint">Saved only in this browser when local storage is available.</span></div>
+        <p class="form-message" id="tripMessage" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="section-wrap content-section workspace-grid" id="checklist">
+      <div class="section-heading compact-heading">
+        <div><span class="eyebrow" data-i18n="checklistEyebrow">TOOL 02</span><h2 data-i18n="checklistTitle">Safety readiness check</h2></div>
+        <p data-i18n="checklistLead">Mark each item only after someone has physically checked it. A completed checklist cannot guarantee safety.</p>
+      </div>
+      <div class="panel checklist-panel">
+        <div class="progress-head"><div><b data-i18n="readinessProgress">Checklist progress</b><p id="checkCount">0 of 8 confirmed</p></div><strong id="checkPercent">0%</strong></div>
+        <div class="progress-track"><span id="progressFill"></span></div>
+        <div class="checklist-items" id="checklistItems">
+          <label class="check-row"><input type="checkbox" value="Life jackets for all crew"><span><b data-en="Life jackets for every crew member" data-bn="প্রত্যেক সদস্যের জন্য লাইফ জ্যাকেট">Life jackets for every crew member</b><small data-en="Confirm fit and condition." data-bn="সঠিক মাপ ও অবস্থা যাচাই করুন।">Confirm fit and condition.</small></span></label>
+          <label class="check-row"><input type="checkbox" value="Communication equipment"><span><b data-en="Working communication equipment" data-bn="কার্যকর যোগাযোগের সরঞ্জাম">Working communication equipment</b><small data-en="Check battery, signal, and backup." data-bn="ব্যাটারি, সিগন্যাল ও বিকল্প ব্যবস্থা পরীক্ষা করুন।">Check battery, signal, and backup.</small></span></label>
+          <label class="check-row"><input type="checkbox" value="Official weather and marine warnings checked"><span><b data-en="Official weather and marine warnings checked" data-bn="সরকারি আবহাওয়া ও সামুদ্রিক সতর্কতা যাচাই">Official weather and marine warnings checked</b><small data-en="Use the latest trusted official source." data-bn="সর্বশেষ নির্ভরযোগ্য সরকারি উৎস ব্যবহার করুন।">Use the latest trusted official source.</small></span></label>
+          <label class="check-row"><input type="checkbox" value="Fuel and vessel condition checked"><span><b data-en="Fuel and vessel condition checked" data-bn="জ্বালানি ও নৌযানের অবস্থা পরীক্ষা">Fuel and vessel condition checked</b><small data-en="Follow vessel and operator procedures." data-bn="নৌযান ও পরিচালকের নিয়ম অনুসরণ করুন।">Follow vessel and operator procedures.</small></span></label>
+          <label class="check-row"><input type="checkbox" value="First-aid kit and essential supplies"><span><b data-en="First-aid kit and essential supplies" data-bn="প্রাথমিক চিকিৎসা ও প্রয়োজনীয় সামগ্রী">First-aid kit and essential supplies</b><small data-en="Check supplies and expiry dates." data-bn="সামগ্রী ও মেয়াদ যাচাই করুন।">Check supplies and expiry dates.</small></span></label>
+          <label class="check-row"><input type="checkbox" value="Drinking water and food"><span><b data-en="Drinking water and food" data-bn="পানীয় জল ও খাবার">Drinking water and food</b><small data-en="Carry suitable quantities for the trip." data-bn="যাত্রার উপযোগী পরিমাণ সঙ্গে রাখুন।">Carry suitable quantities for the trip.</small></span></label>
+          <label class="check-row"><input type="checkbox" value="Shore contact and check-in time agreed"><span><b data-en="Shore contact and check-in time agreed" data-bn="তীরের যোগাযোগ ব্যক্তি ও চেক-ইন সময় নির্ধারিত">Shore contact and check-in time agreed</b><small data-en="Agree what to do if the crew is overdue." data-bn="দেরি হলে কী করতে হবে তা ঠিক করুন।">Agree what to do if the crew is overdue.</small></span></label>
+          <label class="check-row"><input type="checkbox" value="Emergency contacts and response plan reviewed"><span><b data-en="Emergency contacts and response plan reviewed" data-bn="জরুরি যোগাযোগ ও করণীয় পর্যালোচনা">Emergency contacts and response plan reviewed</b><small data-en="Know local emergency procedures." data-bn="স্থানীয় জরুরি পদ্ধতি জেনে রাখুন।">Know local emergency procedures.</small></span></label>
+        </div>
+        <div class="form-actions"><button class="btn btn-secondary" id="resetChecklist" type="button" data-i18n="resetChecklist">Reset checklist</button><span class="form-hint" data-i18n="checklistLocalHint">Checklist state is stored locally on this device.</span></div>
+      </div>
+    </section>
+
+    <section class="section-wrap content-section workspace-grid" id="assistant">
+      <div class="section-heading compact-heading">
+        <div><span class="eyebrow" data-i18n="assistantEyebrow">TOOL 03</span><h2 data-i18n="assistantTitle">Safety thinking assistant</h2></div>
+        <p data-i18n="assistantLead">This version uses transparent keyword-based guidance in your browser. It is not a connected generative AI service and cannot assess actual sea conditions.</p>
+      </div>
+      <div class="panel assistant-panel">
+        <div class="assistant-intro"><div class="assistant-avatar">✳</div><div><b data-i18n="assistantWelcome">Hello, I’m the SeaRoute safety helper.</b><p data-i18n="assistantWelcomeSub">Ask about trip preparation, equipment, communication, or emergency planning.</p></div></div>
+        <div class="suggested-prompts">
+          <button class="prompt-chip" type="button" data-prompt="What equipment should we check before departure?"><span data-i18n="promptEquipment">Equipment checklist</span></button>
+          <button class="prompt-chip" type="button" data-prompt="What should our shore contact know?"><span data-i18n="promptContact">Shore contact plan</span></button>
+          <button class="prompt-chip" type="button" data-prompt="What should we do if official warnings indicate danger?"><span data-i18n="promptWeather">Weather warnings</span></button>
+        </div>
+        <div id="chatLog" class="chat-log" aria-live="polite">
+          <div class="chat-message bot"><span data-i18n="assistantStarter">I can help you organize a checklist. I cannot tell you whether it is safe to go to sea. Always follow official warnings and qualified local guidance.</span></div>
+        </div>
+        <form id="assistantForm" class="assistant-form">
+          <label class="sr-only" for="assistantInput" data-i18n="assistantInputLabel">Ask a safety preparation question</label>
+          <input id="assistantInput" maxlength="500" placeholder="Ask a safety-preparation question…" data-i18n-placeholder="assistantPlaceholder" required>
+          <button class="btn btn-primary" type="submit" data-i18n="sendQuestion">Ask</button>
+        </form>
+        <p class="form-hint" data-i18n="assistantPrivacy">Questions are processed in this page only; this demo does not send them to an AI provider.</p>
+      </div>
+    </section>
+
+    <section class="section-wrap content-section workspace-grid" id="saved">
+      <div class="section-heading compact-heading">
+        <div><span class="eyebrow" data-i18n="savedEyebrow">TOOL 04</span><h2 data-i18n="savedTitle">Saved trip plan</h2></div>
+        <p data-i18n="savedLead">Review, copy, or remove the trip plan stored in this browser.</p>
+      </div>
+      <div class="panel saved-panel">
+        <div id="savedEmpty" class="empty-state"><div class="empty-icon">▤</div><h3 data-i18n="emptyTitle">No saved trip yet</h3><p data-i18n="emptyText">Create a trip plan above and save it to see the summary here.</p><a href="#planner" class="text-button" data-i18n="createPlanLink">Create a trip plan →</a></div>
+        <div id="savedDetails" hidden>
+          <div class="saved-title-row"><div><span class="tag" data-i18n="savedLocally">SAVED LOCALLY</span><h3 id="savedTripTitle"></h3></div><span class="saved-date" id="savedTripDate"></span></div>
+          <dl class="trip-details" id="tripDetails"></dl>
+          <div class="form-actions"><button class="btn btn-primary" id="downloadSummary" type="button" data-i18n="downloadSummary">Download text summary</button><button class="btn btn-secondary" id="deleteTrip" type="button" data-i18n="deletePlan">Delete saved plan</button></div>
+        </div>
+        <p class="form-message" id="savedMessage" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="section-wrap content-section" id="safety">
+      <div class="safety-banner">
+        <div class="safety-symbol">!</div><div><span class="eyebrow" data-i18n="safetyEyebrow">IMPORTANT LIMITATION</span><h2 data-i18n="safetyTitle">This prototype is not a navigation authority.</h2><p data-i18n="safetyText">It does not connect to live marine weather, tides, GPS, charts, vessel tracking, or emergency services. Do not use it to choose a route or decide whether to depart. Check official Bangladesh weather and maritime warnings, follow local authorities, and use qualified human judgment.</p></div>
+      </div>
+    </section>
+
+    <section class="section-wrap content-section about-section" id="about">
+      <div><span class="eyebrow" data-i18n="aboutEyebrow">WHY SEAROUTE AI</span><h2 data-i18n="aboutTitle">Designed around people, not just technology.</h2></div>
+      <div class="about-copy"><p data-i18n="aboutText">SeaRoute AI is an early-stage concept for coastal fishing communities. The goal is to make trip preparation and safety information easier to organize, including for users who prefer Bangla.</p><p data-i18n="ethicsText">Responsible use means being honest about uncertainty, protecting personal information, testing with local fishers, and keeping safety-critical decisions with people and official sources.</p><div class="principle-pills"><span data-i18n="pillAccessible">Accessible</span><span data-i18n="pillTransparent">Transparent</span><span data-i18n="pillHuman">Human-led</span><span data-i18n="pillPrivacy">Privacy-aware</span></div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">S</span><span>SeaRoute<span class="brand-ai"> AI</span><small data-i18n="footerTag">SAFER PREPARATION, BETTER INFORMED</small></span></a><p data-i18n="footerNote">Prototype only · No live marine data · Use official safety guidance</p><a href="#home" class="back-top" data-i18n="backTop">Back to top ↑</a></footer>
+</body>
+</html>
